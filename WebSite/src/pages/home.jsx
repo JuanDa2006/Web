@@ -1,3 +1,7 @@
+import Nav from '../components/nav';
+import Header from '../components/header';
+import Footer from '../components/footer';
+
 const firstList = [
     {
         text: 'Alcanzar a más clientes potenciales en línea las 24/7.',
@@ -54,15 +58,13 @@ const mainSecondList = secondList.map((item) => (
     </p>
 ));
 
-import Nav from '../components/nav';
-import Header from '../components/header';
-
 export default function Home() {
     return (
         <>
             <Nav />
             <Header />
             <Main />
+            <Footer />
         </>
     );
 }

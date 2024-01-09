@@ -115,3 +115,14 @@ h2 {
     color: $Azure;
     margin: 5px 0;
 }
+
+//Footer
+footer {
+    padding: 5px;
+    background: $Azure;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $White;
+}
