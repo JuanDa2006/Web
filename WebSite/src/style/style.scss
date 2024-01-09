@@ -52,3 +52,23 @@ nav {
         }
     }
 }
+
+//Header
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header-text{
+    width: 50%;
+    text-align: center;
+
+    h1 {
+        color: $Main-BLue;
+        font-weight: 900;
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+}

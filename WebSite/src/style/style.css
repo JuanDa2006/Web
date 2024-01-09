@@ -54,3 +54,25 @@ nav {
 .links li a {
 		color: #fff;
 }
+
+header {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+}
+
+.header-text {
+		width: 50%;
+		text-align: center;
+}
+.header-text h1 {
+		color: #007bff;
+		font-weight: 900;
+		font-size: 60px;
+		text-transform: uppercase;
+}
