@@ -16,6 +16,47 @@ body {
 		font-family: "Montserrat", sans-serif;
 }
 
+.container {
+		margin: 25px auto;
+}
+.container p {
+		margin: 15px 0;
+		font-size: 18px;
+}
+.container h2 {
+		font-size: 40px;
+		color: #007bff;
+		margin: 5px 0;
+}
+.container ol {
+		margin: 15px 25px;
+}
+.container ol li {
+		font-size: 18px;
+		margin: 15px 0;
+}
+
+#error-page {
+		height: 100vh;
+		width: 100vw;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		text-align: center;
+}
+#error-page h1 {
+		color: #007bff;
+		font-weight: 900;
+		font-size: 60px;
+		text-transform: uppercase;
+}
+
 nav {
 		width: 100vw;
 		background-color: #007bff;
@@ -122,6 +163,7 @@ main {
 }
 
 h2 {
+		font-size: 25px;
 		color: #007bff;
 		margin: 5px 0;
 }
@@ -140,4 +182,68 @@ footer {
 		    -ms-flex-align: center;
 		        align-items: center;
 		color: #fff;
+}
+
+#contact {
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-ms-flex-line-pack: justify;
+		    align-content: space-between;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		text-align: center;
+}
+
+#contact-form h1 {
+		color: #007bff;
+		font-weight: 900;
+		font-size: 60px;
+		text-transform: uppercase;
+}
+#contact-form input {
+		font-family: "Montserrat", sans-serif;
+		font-size: 18px;
+		width: 600px;
+		margin: 10px;
+		padding: 10px;
+}
+#contact-form textarea {
+		resize: none;
+		font-family: "Montserrat", sans-serif;
+		font-size: 18px;
+		width: 600px;
+		height: 200px;
+		margin: 10px;
+		padding: 10px;
+}
+#contact-form button.submit-button {
+		border: none;
+		background: #007bff;
+		padding: 5px;
+}
+#contact-form button.submit-button p {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding: 5px;
+		color: #fff;
+}
+#contact-form button.submit-button p span {
+		margin: 0 10px 0 0;
 }

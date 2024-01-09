@@ -3,6 +3,7 @@ const mainLinks = [
     { name: 'Precios', url: '/prices' },
     { name: 'Plantillas', url: '/templates' },
     { name: 'Más información', url: '/info' },
+    { name: 'Contactanos', url: '/contact' },
 ];
 
 const navMainLinks = mainLinks.map((mainLink) => (
