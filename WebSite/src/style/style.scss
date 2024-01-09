@@ -71,4 +71,21 @@ header {
         font-size: 60px;
         text-transform: uppercase;
     }
+    
+    p {
+        transition: ease-in-out .75s;
+    
+        &:hover {
+            letter-spacing: 7px;
+        }
+
+    }
+}
+
+.header-img {
+    width: 50%;
+    background: url(../assets/img/img2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75vh;
 }
