@@ -7,9 +7,7 @@ export default function Header() {
                     <p>Navegando a tu Éxito Digital</p>
                 </div>
                 <div className="header-img">
-                    <img src="../assets/img/img2.png" alt="" />
                 </div>
-                
             </header>
         </>
     );

@@ -1,5 +1,6 @@
 const mainLinks = [
     { name: '¿Quienes somos?', url: '/about' },
+    { name: 'Precios', url: '/prices' },
     { name: 'Plantillas', url: '/templates' },
     { name: 'Más información', url: '/info' },
 ];

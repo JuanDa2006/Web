@@ -20,7 +20,7 @@ body {
 //Nav
 nav {
     width: 100vw;
-    background-color: $Main-BLue;
+    background-color: $Azure;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ header {
     text-align: center;
 
     h1 {
-        color: $Main-BLue;
+        color: $Azure;
         font-weight: 900;
         font-size: 60px;
         text-transform: uppercase;
@@ -74,11 +74,7 @@ header {
     
     p {
         transition: ease-in-out .75s;
-    
-        &:hover {
-            letter-spacing: 7px;
-        }
-
+        letter-spacing: 7px;
     }
 }
 
@@ -88,4 +84,34 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     height: 75vh;
+}
+
+//Main
+main {
+    margin: auto;
+    width: 80%;
+}
+
+.itemList {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+
+    span {
+        color: $Azure;
+    }
+}
+
+.main-section-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstList, .secondList {
+    margin: 25px 0;
+}
+
+h2 {
+    color: $Azure;
+    margin: 5px 0;
 }
