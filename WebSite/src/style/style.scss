@@ -1,12 +1,54 @@
-@import url(fonts);
+@import "fonts";
+@import "colors";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: $Montserrat;
+}
+
+//Nav
+nav {
+    width: 100vw;
+    background-color: $Main-BLue;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-name {
+    a {
+        color: $White;
+        font-weight: 900;
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+}
+
+.links {
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+    
+    li {
+        list-style: none;
+        margin: 0 15px;
+
+        a {
+            color: $White;
+        }
+    }
 }
