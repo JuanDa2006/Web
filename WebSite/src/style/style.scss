@@ -220,14 +220,29 @@ h3 {
 
 .plan-buttons-container {
     width: 100%;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 button.plan-buy {
+    margin: 10px;
     padding: 10px;
     color: $White;
     background: $Azure;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+button.plan-info {
+    margin: 10px;
+    padding: 10px;
+    color: $Azure;
+    background: $White;
     border: none;
     border-radius: 5px;
     font-size: 12px;
