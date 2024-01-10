@@ -1,12 +1,17 @@
+import React, { useEffect } from 'react';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 
 export default function Contact() {
+    useEffect(() => {
+        document.title = 'WebSite - Contacto';
+    }, []);
+
     return (
         <>
-            <section id="contact">
+            <section id='contact'>
                 <Nav />
-                <main id="contact-form">
+                <main id='contact-form'>
                     <Form />
                 </main>
                 <Footer />
@@ -19,28 +24,28 @@ function Form() {
     return (
         <>
             <h1>Contacto</h1>
-            <form id="contact-form" action="enviar.php" method="post">
-                <div className="form-item">
-                    <input type="text" name="name" placeholder="Nombre" />
+            <form id='contact-form' action='enviar.php' method='post'>
+                <div className='form-item'>
+                    <input type='text' name='name' placeholder='Nombre' />
                 </div>
-                <div className="form-item">
+                <div className='form-item'>
                     <input
-                        type="text"
-                        name="email"
-                        placeholder="name@example.com"
+                        type='text'
+                        name='email'
+                        placeholder='name@example.com'
                     />
                 </div>
-                <div className="form-textarea">
+                <div className='form-textarea'>
                     <textarea
-                        type="text"
-                        name="message"
-                        placeholder="Mensaje"
+                        type='text'
+                        name='message'
+                        placeholder='Mensaje'
                     />
                 </div>
-                <input type="hidden" name="form_submission" value="1" />
-                <button type="submit" class="submit-button">
+                <input type='hidden' name='form_submission' value='1' />
+                <button type='submit' class='submit-button'>
                     <p>
-                        <span class="material-symbols-outlined">send</span>
+                        <span class='material-symbols-outlined'>send</span>
                         Enviar
                     </p>
                 </button>

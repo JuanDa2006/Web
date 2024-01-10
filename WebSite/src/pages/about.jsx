@@ -1,7 +1,12 @@
+import React, { useEffect } from 'react';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 
 export default function About() {
+    useEffect(() => {
+        document.title = 'WebSite - ¿Quienes Somos?';
+    }, []);
+
     return (
         <>
             <Nav />

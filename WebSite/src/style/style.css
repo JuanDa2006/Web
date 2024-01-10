@@ -393,3 +393,11 @@ button.plan-info {
 #contact-form button.submit-button:hover {
 		background: #0068d8;
 }
+
+#info h1 {
+		color: #007bff;
+		font-weight: 900;
+		font-size: 60px;
+		text-transform: uppercase;
+		cursor: default;
+}

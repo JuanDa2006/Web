@@ -340,3 +340,15 @@ button.plan-info {
         }
     }
 }
+
+//Info
+
+#info {
+    h1 {
+        color: $Azure;
+        font-weight: 900;
+        font-size: 60px;
+        text-transform: uppercase;
+        cursor: default;
+    }
+}

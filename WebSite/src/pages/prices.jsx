@@ -6,6 +6,7 @@ export default function Prices() {
     useEffect(() => {
         document.title = 'WebSite - Precios';
     }, []);
+
 	return (
 		<>
 			<section id='prices'>
@@ -208,7 +209,7 @@ function Price() {
 					<h3>Básico</h3>
 					<p>Plan ideal para comenzar.</p>
 					{mainBasicList}
-					<p className='plan-price'>60€</p>
+					<p className='plan-price'>80€</p>
 					<div className='plan-buttons-container'>
 						<button className='plan-buy'>
 							<p>Contatar</p>
@@ -222,7 +223,7 @@ function Price() {
 					<h3>Intermedio</h3>
 					<p>Plan para empresas en crecimiento.</p>
 					{mainMediumList}
-					<p className='plan-price'>100€</p>
+					<p className='plan-price'>150€</p>
 					<div className='plan-buttons-container'>
 						<button className='plan-buy'>
 							<p>Contatar</p>
@@ -236,7 +237,7 @@ function Price() {
 					<h3>Avanzado</h3>
 					<p>Plan completo para grandes proyectos.</p>
 					{mainPlusList}
-					<p className='plan-price'>120€</p>
+					<p className='plan-price'>200€</p>
 					<div className='plan-buttons-container'>
 						<button className='plan-buy'>
 							<p>Contatar</p>
