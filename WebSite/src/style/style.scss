@@ -149,7 +149,7 @@ main {
 }
 
 .firstList, .secondList {
-    margin: 25px 0;
+    margin: 25px;
 }
 
 h2 {
@@ -167,6 +167,37 @@ footer {
     justify-content: center;
     align-items: center;
     color: $White;
+}
+
+//Prices
+#prices {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#prices-continer {
+    h1 {
+        color: $Azure;
+        font-weight: 900;
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+}
+
+#plan-contenedores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.plan {
+    width: 30%;
 }
 
 //Contact
@@ -195,9 +226,18 @@ footer {
         width: 600px;
         margin: 10px;
         padding: 10px;
+        border: none;
+        border-bottom: 1px solid $Azure;
+        
+        &:focus {
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid $Azure;
+        }
     }
     
     textarea {
+        border: 1px solid $Azure;
         resize: none;
         font-family: $Montserrat;
         font-size: 18px;
@@ -205,13 +245,20 @@ footer {
         height: 200px;
         margin: 10px;
         padding: 10px;
+        
+        &:focus {
+            outline: none;
+            border: 1px solid $Azure;
+        }
     }
 
     button.submit-button {
         border: none;
         background: $Azure;
         padding: 5px;
-
+        transition: ease-in-out .5s;
+        cursor: pointer;
+        
         p {
             font-family: $Montserrat;
             font-weight: 700;
@@ -225,6 +272,10 @@ footer {
             span {
                 margin: 0 10px 0 0;
             }
+        }
+
+        &:hover {
+            background: $Dark-Azure;
         }
     }
 }

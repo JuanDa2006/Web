@@ -159,7 +159,7 @@ main {
 }
 
 .firstList, .secondList {
-		margin: 25px 0;
+		margin: 25px;
 }
 
 h2 {
@@ -182,6 +182,45 @@ footer {
 		    -ms-flex-align: center;
 		        align-items: center;
 		color: #fff;
+}
+
+#prices {
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-ms-flex-line-pack: justify;
+		    align-content: space-between;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		text-align: center;
+}
+
+#prices-continer h1 {
+		color: #007bff;
+		font-weight: 900;
+		font-size: 60px;
+		text-transform: uppercase;
+}
+
+#plan-contenedores {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+}
+
+.plan {
+		width: 30%;
 }
 
 #contact {
@@ -213,8 +252,16 @@ footer {
 		width: 600px;
 		margin: 10px;
 		padding: 10px;
+		border: none;
+		border-bottom: 1px solid #007bff;
+}
+#contact-form input:focus {
+		border-radius: 5px;
+		outline: none;
+		border: 1px solid #007bff;
 }
 #contact-form textarea {
+		border: 1px solid #007bff;
 		resize: none;
 		font-family: "Montserrat", sans-serif;
 		font-size: 18px;
@@ -223,10 +270,17 @@ footer {
 		margin: 10px;
 		padding: 10px;
 }
+#contact-form textarea:focus {
+		outline: none;
+		border: 1px solid #007bff;
+}
 #contact-form button.submit-button {
 		border: none;
 		background: #007bff;
 		padding: 5px;
+		-webkit-transition: ease-in-out 0.5s;
+		transition: ease-in-out 0.5s;
+		cursor: pointer;
 }
 #contact-form button.submit-button p {
 		font-family: "Montserrat", sans-serif;
@@ -246,4 +300,7 @@ footer {
 }
 #contact-form button.submit-button p span {
 		margin: 0 10px 0 0;
+}
+#contact-form button.submit-button:hover {
+		background: #0068d8;
 }
