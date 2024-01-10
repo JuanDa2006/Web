@@ -196,10 +196,44 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 25px 0;
 }
 
 .plan {
     width: 30%;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #0005;
+}
+
+h3 {
+    font-size: 30px;
+    color: $Azure;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.plan-price {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.plan-buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button.plan-buy {
+    padding: 10px;
+    color: $White;
+    background: $Azure;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 //Contact
