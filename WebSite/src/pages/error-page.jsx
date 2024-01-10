@@ -7,8 +7,9 @@ export default function ErrorPage() {
     return (
         <div id="error-page">
             <div className="container">
-                <a href="/"><h1>Oops!</h1></a>
+                <h1>Error!!!</h1>
                 <p>Disculpas, ha ocurrido un error</p>
+                <a href="/">Volver</a>
                 <p>
                     <i>{error.statusText || error.message}</i>
                 </p>

@@ -1,5 +1,5 @@
-@import "fonts";
-@import "colors";
+@import 'fonts';
+@import 'colors';
 
 * {
     margin: 0;
@@ -24,21 +24,30 @@ body {
         margin: 15px 0;
         font-size: 18px;
     }
-    
+
     h2 {
-        font-size: 40px;
+        font-size: 35px;
         color: $Azure;
         margin: 5px 0;
     }
-    
-    ol {
+
+    ol,
+    ul {
         margin: 15px 25px;
-        
+
         li {
             font-size: 18px;
             margin: 15px 0;
         }
     }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    cursor: default;
+}
+
+a {
+    color: $Black;
 }
 
 //Error
@@ -83,7 +92,7 @@ nav {
         display: flex;
         justify-content: center;
     }
-    
+
     li {
         list-style: none;
         margin: 0 15px;
@@ -102,7 +111,7 @@ header {
     align-items: center;
 }
 
-.header-text{
+.header-text {
     width: 50%;
     text-align: center;
 
@@ -113,9 +122,9 @@ header {
         text-transform: uppercase;
         cursor: default;
     }
-    
+
     p {
-        transition: ease-in-out .75s;
+        transition: ease-in-out 0.75s;
         letter-spacing: 7px;
     }
 }
@@ -149,7 +158,8 @@ main {
     justify-content: space-between;
 }
 
-.firstList, .secondList {
+.firstList,
+.secondList {
     margin: 25px;
 }
 
@@ -228,7 +238,6 @@ h3 {
 button.plan-buy {
     margin: 10px;
     padding: 10px;
-    color: $White;
     background: $Azure;
     border: none;
     border-radius: 5px;
@@ -236,12 +245,15 @@ button.plan-buy {
     cursor: pointer;
     font-weight: 800;
     text-transform: uppercase;
+
+    a {
+        color: $White;
+    }
 }
 
 button.plan-info {
     margin: 10px;
     padding: 10px;
-    color: $Azure;
     background: $White;
     border: none;
     border-radius: 5px;
@@ -249,6 +261,10 @@ button.plan-info {
     cursor: pointer;
     font-weight: 800;
     text-transform: uppercase;
+
+    a {
+        color: $Azure;
+    }
 }
 
 //Contact
@@ -280,8 +296,8 @@ button.plan-info {
         padding: 10px;
         border: 1px solid $Transparent;
         border-bottom: 1px solid $Azure;
-        transition: ease-in .1s;
-        
+        transition: ease-in 0.1s;
+
         &:focus {
             border-radius: 5px;
             outline: none;
@@ -292,7 +308,7 @@ button.plan-info {
             }
         }
     }
-    
+
     textarea {
         border: 1px solid $Azure;
         resize: none;
@@ -302,11 +318,11 @@ button.plan-info {
         height: 200px;
         margin: 10px;
         padding: 10px;
-        
+
         &:focus {
             outline: none;
             border: 1px solid $Azure;
-            
+
             &::placeholder {
                 color: transparent;
             }
@@ -317,9 +333,9 @@ button.plan-info {
         border: none;
         background: $Azure;
         padding: 5px;
-        transition: ease-in-out .5s;
+        transition: ease-in-out 0.5s;
         cursor: pointer;
-        
+
         p {
             font-family: $Montserrat;
             font-weight: 700;
@@ -329,7 +345,7 @@ button.plan-info {
             align-items: center;
             padding: 5px;
             color: $White;
-           
+
             span {
                 margin: 0 10px 0 0;
             }

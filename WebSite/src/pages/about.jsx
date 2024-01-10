@@ -11,7 +11,7 @@ export default function About() {
         <>
             <Nav />
             <main>
-                <section className="container">
+                <div className="container">
                     <h2>Historia de la Empresa</h2>
                     <p>
                         La historia de nuestra empresa comenzó en el año 2017,
@@ -84,8 +84,8 @@ export default function About() {
                         una pieza fundamental en el éxito de quienes confían en
                         nosotros.
                     </p>
-                </section>
-                <section className="container">
+                </div>
+                <div className="container">
                     <h2>Misión y Visión</h2>
                     <p>
                         En Genios Web, nuestra misión es proporcionar soluciones
@@ -123,8 +123,8 @@ export default function About() {
                         digital de nuestros clientes y generen un impacto
                         positivo en sus resultados.
                     </p>
-                </section>
-                <section className="container">
+                </div>
+                <div className="container">
                     <h2>Valores y Filosofía</h2>
                     <p>
                         En Genios Web, nuestros valores y filosofía son la base
@@ -181,8 +181,8 @@ export default function About() {
                             entorno digital.
                         </li>
                     </ol>
-                </section>
-                <section className="container">
+                </div>
+                <div className="container">
                     <h2>Equipo y Experiencia</h2>
                     <p>
                         En Genios Web, contamos con un equipo apasionado y
@@ -236,8 +236,8 @@ export default function About() {
                         crecimiento y prosperidad de sus negocios a través de
                         soluciones web innovadoras y efectivas.
                     </p>
-                </section>
-                <section className="container">
+                </div>
+                <div className="container">
                     <h2>Compromiso con el Cliente</h2>
                     <p>
                         En Genios Web, nuestro compromiso con el cliente es la
@@ -304,7 +304,7 @@ export default function About() {
                         trabajamos incansablemente para hacer de cada proyecto
                         una experiencia gratificante y exitosa.
                     </p>
-                </section>
+                </div>
             </main>
             <Footer />
         </>
