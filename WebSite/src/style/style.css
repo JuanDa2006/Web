@@ -116,6 +116,7 @@ header {
 		font-weight: 900;
 		font-size: 60px;
 		text-transform: uppercase;
+		cursor: default;
 }
 .header-text p {
 		-webkit-transition: ease-in-out 0.75s;
@@ -206,6 +207,7 @@ footer {
 		font-weight: 900;
 		font-size: 60px;
 		text-transform: uppercase;
+		cursor: default;
 }
 
 #plan-contenedores {
@@ -245,6 +247,7 @@ footer {
 		font-weight: 900;
 		font-size: 60px;
 		text-transform: uppercase;
+		cursor: default;
 }
 #contact-form input {
 		font-family: "Montserrat", sans-serif;
@@ -252,13 +255,30 @@ footer {
 		width: 600px;
 		margin: 10px;
 		padding: 10px;
-		border: none;
+		border: 1px solid rgba(0, 0, 0, 0);
 		border-bottom: 1px solid #007bff;
+		-webkit-transition: ease-in 0.1s;
+		transition: ease-in 0.1s;
 }
 #contact-form input:focus {
 		border-radius: 5px;
 		outline: none;
 		border: 1px solid #007bff;
+}
+#contact-form input:focus::-webkit-input-placeholder {
+		color: transparent;
+}
+#contact-form input:focus::-moz-placeholder {
+		color: transparent;
+}
+#contact-form input:focus:-ms-input-placeholder {
+		color: transparent;
+}
+#contact-form input:focus::-ms-input-placeholder {
+		color: transparent;
+}
+#contact-form input:focus::placeholder {
+		color: transparent;
 }
 #contact-form textarea {
 		border: 1px solid #007bff;
@@ -273,6 +293,21 @@ footer {
 #contact-form textarea:focus {
 		outline: none;
 		border: 1px solid #007bff;
+}
+#contact-form textarea:focus::-webkit-input-placeholder {
+		color: transparent;
+}
+#contact-form textarea:focus::-moz-placeholder {
+		color: transparent;
+}
+#contact-form textarea:focus:-ms-input-placeholder {
+		color: transparent;
+}
+#contact-form textarea:focus::-ms-input-placeholder {
+		color: transparent;
+}
+#contact-form textarea:focus::placeholder {
+		color: transparent;
 }
 #contact-form button.submit-button {
 		border: none;
