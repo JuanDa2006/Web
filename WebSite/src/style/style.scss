@@ -23,6 +23,8 @@ html {
 
 body {
     font-family: $Montserrat;
+    min-width: 100vw;
+    overflow-x: hidden;
 }
 
 .container {
@@ -148,7 +150,6 @@ header {
 //Main
 main {
     margin: auto;
-    width: 80%;
 }
 
 .itemList {
@@ -164,11 +165,7 @@ main {
 .main-section-1 {
     display: flex;
     justify-content: space-between;
-}
-
-.firstList,
-.secondList {
-    margin: 25px;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -186,6 +183,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: $White;
+    text-align: center;
 }
 
 //Prices
@@ -376,3 +374,5 @@ button.plan-info {
         cursor: default;
     }
 }
+
+@import 'responsive';

@@ -20,6 +20,8 @@ html::-webkit-scrollbar-thumb {
 
 body {
 		font-family: "Montserrat", sans-serif;
+		min-width: 100vw;
+		overflow-x: hidden;
 }
 
 .container {
@@ -150,7 +152,6 @@ header {
 
 main {
 		margin: auto;
-		width: 80%;
 }
 
 .itemList {
@@ -173,11 +174,8 @@ main {
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
-}
-
-.firstList,
-.secondList {
-		margin: 25px;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 }
 
 h2 {
@@ -200,6 +198,7 @@ footer {
 		    -ms-flex-align: center;
 		        align-items: center;
 		color: #fff;
+		text-align: center;
 }
 
 #prices {
@@ -421,4 +420,32 @@ button.plan-info a {
 		font-size: 60px;
 		text-transform: uppercase;
 		cursor: default;
+}
+
+@media screen and (max-width: 767px) {
+		main {
+				width: 90%;
+		}
+		.firstList,
+		.secondList {
+				min-width: 100%;
+		}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+		main {
+				width: 85%;
+		}
+		.firstList,
+		.secondList {
+				width: 45%;
+		}
+}
+@media screen and (min-width: 1024px) {
+		main {
+				width: 75%;
+		}
+		.firstList,
+		.secondList {
+				width: 45%;
+		}
 }
