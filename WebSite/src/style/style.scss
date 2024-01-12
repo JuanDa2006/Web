@@ -85,7 +85,47 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    ul#nav {
+        float: left;
+        margin-left: 20px;
+
+        li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+
+            a {
+                color: $White;
+                font-size: 16px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                transition: ease-in-out 0.25s;
+            }
+        }
+    }
 }
+
+.checkbtn {
+    font-size: 30px;
+    color: $White;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block;
+}
+
+#check {
+    display: none;
+}
+
+span {
+    cursor: pointer;
+}
+
+
 
 .page-name {
     a {

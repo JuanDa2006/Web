@@ -24,7 +24,7 @@ export default function Nav() {
 					<span class="material-symbols-outlined">menu</span>
 				</label>
 				<div className="links">
-					<ul>{navMainLinks}</ul>
+					<ul id="nav">{navMainLinks}</ul>
 				</div>
 			</nav>
 		</>
