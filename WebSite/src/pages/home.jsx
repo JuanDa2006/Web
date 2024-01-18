@@ -72,7 +72,7 @@ export default function Home() {
 function Main() {
     return (
         <>
-            <main>
+            <main className='container'>
                 <div className="main-section-1">
                     <div className="firstList">
                         <h2>Razones para Tener una Página Web</h2>

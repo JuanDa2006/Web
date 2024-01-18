@@ -11,7 +11,7 @@ export default function Info() {
         <>
             <section id="info">
                 <Nav />
-                <main>
+                <main className='container'>
                     <h1>Descubre nuestros planes de desarrollo</h1>
                     <div className="container">
                         <h2>Plan Inicio Web (Básico)</h2>
