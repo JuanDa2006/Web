@@ -79,6 +79,21 @@ a {
 		font-size: 60px;
 		text-transform: uppercase;
 }
+#error-page .back {
+		margin-top: 40px;
+		line-height: 7px;
+}
+#error-page .back a {
+		padding: 10px;
+		border-radius: 10px;
+		letter-spacing: 2px;
+		font-size: 20px;
+		background: #007bff;
+		color: #fff;
+		font-weight: 700;
+		text-transform: uppercase;
+		font-style: oblique;
+}
 
 nav {
 		top: 0;

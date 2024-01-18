@@ -80,6 +80,23 @@ a {
         font-size: 60px;
         text-transform: uppercase;
     }
+    
+    .back {
+        margin-top: 40px;
+        line-height: 7px;
+        
+        a {
+            padding: 10px;
+            border-radius: 10px;
+            letter-spacing: 2px;
+            font-size: 20px;
+            background: $Azure;
+            color: $White;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-style: oblique;
+        }
+    }
 }
 
 //Nav
