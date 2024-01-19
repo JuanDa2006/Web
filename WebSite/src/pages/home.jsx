@@ -84,6 +84,7 @@ function Main() {
                         {mainSecondList}
                     </div>
                 </div>
+                
             </main>
         </>
     );

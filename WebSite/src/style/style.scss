@@ -23,6 +23,7 @@ html {
 body {
     font-family: $Montserrat;
     min-width: 100vw;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -185,7 +186,7 @@ main {
 
 .itemList {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin: 15px 0;
     text-align: left;
 

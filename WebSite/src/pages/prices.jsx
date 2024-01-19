@@ -241,8 +241,8 @@ function Price() {
                             <a href="/">Contatar</a>
                         </button>
                         <button className="plan-info">
-							<a href="/info">Mas información</a>
-						</button>
+                            <a href="/info">Mas información</a>
+                        </button>
                     </div>
                 </div>
                 <div className="plan">
@@ -255,8 +255,8 @@ function Price() {
                             <a href="/">Contatar</a>
                         </button>
                         <button className="plan-info">
-							<a href="/info">Mas información</a>
-						</button>
+                            <a href="/info">Mas información</a>
+                        </button>
                     </div>
                 </div>
             </div>
