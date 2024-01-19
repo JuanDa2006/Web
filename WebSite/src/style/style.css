@@ -195,9 +195,11 @@ main {
 		    -ms-flex-align: center;
 		        align-items: center;
 		margin: 15px 0;
+		text-align: left;
 }
 .itemList span {
 		color: #007bff;
+		margin-right: 5px;
 }
 
 .main-section-1 {
@@ -240,6 +242,7 @@ footer {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		overflow: auto;
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
@@ -542,7 +545,7 @@ button.plan-info a {
 @media (min-width: 960px) {
 		#prices {
 				height: 100vh;
-				overflow: hidden;
+				overflow-x: hidden;
 		}
 		.plan {
 				width: 30%;

@@ -187,9 +187,11 @@ main {
     display: flex;
     align-items: center;
     margin: 15px 0;
+    text-align: left;
 
     span {
         color: $Azure;
+        margin-right: 5px;
     }
 }
 
@@ -222,6 +224,7 @@ footer {
 #prices {
     width: 100vw;
     display: flex;
+    overflow: auto;
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
