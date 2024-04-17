@@ -14,7 +14,7 @@ html::-webkit-scrollbar {
 		width: 10px;
 }
 html::-webkit-scrollbar-thumb {
-		background: #0068d8;
+		background: #004085;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 }
 .container h2 {
 		font-size: 35px;
-		color: #007bff;
+		color: #004085;
 		margin: 5px 0;
 }
 .container ol,
@@ -75,7 +75,7 @@ a {
 		text-align: center;
 }
 #error-page h1 {
-		color: #007bff;
+		color: #004085;
 		font-weight: 900;
 		font-size: 60px;
 		text-transform: uppercase;
@@ -89,7 +89,7 @@ a {
 		border-radius: 10px;
 		letter-spacing: 2px;
 		font-size: 20px;
-		background: #007bff;
+		background: #004085;
 		color: #fff;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -112,7 +112,7 @@ nav {
 		    -ms-flex-align: center;
 		        align-items: center;
 		padding: 0 50px;
-		background: #007bff;
+		background: #004085;
 }
 nav ul#nav {
 		margin-left: 20px;
@@ -156,7 +156,7 @@ header {
 		margin: 50px 0;
 }
 .header-text h1 {
-		color: #007bff;
+		color: #004085;
 		font-weight: 900;
 		font-size: 60px;
 		text-transform: uppercase;
@@ -199,7 +199,7 @@ main {
 		text-align: left;
 }
 .itemList span {
-		color: #007bff;
+		color: #004085;
 		margin-right: 5px;
 }
 
@@ -217,13 +217,13 @@ main {
 
 h2 {
 		font-size: 25px;
-		color: #007bff;
+		color: #004085;
 		margin: 5px 0;
 }
 
 footer {
 		padding: 5px;
-		background: #007bff;
+		background: #004085;
 		width: 100vw;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -255,7 +255,7 @@ footer {
 }
 
 #prices-continer h1 {
-		color: #007bff;
+		color: #004085;
 		font-weight: 900;
 		font-size: 60px;
 		text-transform: uppercase;
@@ -285,7 +285,7 @@ footer {
 
 h3 {
 		font-size: 30px;
-		color: #007bff;
+		color: #004085;
 		font-weight: 700;
 		margin: 10px;
 }
@@ -309,7 +309,7 @@ h3 {
 button.plan-buy {
 		margin: 10px;
 		padding: 10px;
-		background: #007bff;
+		background: #004085;
 		border: none;
 		border-radius: 5px;
 		font-size: 12px;
@@ -333,7 +333,7 @@ button.plan-info {
 		text-transform: uppercase;
 }
 button.plan-info a {
-		color: #007bff;
+		color: #004085;
 }
 
 #contact {
@@ -354,7 +354,7 @@ button.plan-info a {
 }
 
 #contact-form h1 {
-		color: #007bff;
+		color: #004085;
 		font-weight: 900;
 		text-transform: uppercase;
 		cursor: default;
@@ -364,14 +364,14 @@ button.plan-info a {
 		margin: 10px;
 		padding: 10px;
 		border: 1px solid rgba(0, 0, 0, 0);
-		border-bottom: 1px solid #007bff;
+		border-bottom: 1px solid #004085;
 		-webkit-transition: ease-in 0.1s;
 		transition: ease-in 0.1s;
 }
 #contact-form input:focus {
 		border-radius: 5px;
 		outline: none;
-		border: 1px solid #007bff;
+		border: 1px solid #004085;
 }
 #contact-form input:focus::-webkit-input-placeholder {
 		color: transparent;
@@ -389,7 +389,7 @@ button.plan-info a {
 		color: transparent;
 }
 #contact-form textarea {
-		border: 1px solid #007bff;
+		border: 1px solid #004085;
 		resize: none;
 		font-family: "Montserrat", sans-serif;
 		height: 200px;
@@ -398,7 +398,7 @@ button.plan-info a {
 }
 #contact-form textarea:focus {
 		outline: none;
-		border: 1px solid #007bff;
+		border: 1px solid #004085;
 }
 #contact-form textarea:focus::-webkit-input-placeholder {
 		color: transparent;
@@ -417,7 +417,7 @@ button.plan-info a {
 }
 #contact-form button.submit-button {
 		border: none;
-		background: #007bff;
+		background: #004085;
 		padding: 5px;
 		-webkit-transition: ease-in-out 0.5s;
 		transition: ease-in-out 0.5s;
@@ -443,11 +443,11 @@ button.plan-info a {
 		margin: 0 10px 0 0;
 }
 #contact-form button.submit-button:hover {
-		background: #0068d8;
+		background: #004085;
 }
 
 #info h1 {
-		color: #007bff;
+		color: #004085;
 		font-weight: 900;
 		font-size: 60px;
 		text-transform: uppercase;
@@ -665,7 +665,7 @@ button.plan-info a {
 				text-align: right;
 				-webkit-transition: all 0.3s;
 				transition: all 0.3s;
-				background: #007bff;
+				background: #004085;
 		}
 		.checkbtn {
 				font-size: 30px;
