@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
-import $ from 'jquery';
 import '../js/send';
 
 export default function Contact() {
@@ -22,17 +21,28 @@ export default function Contact() {
     );
 }
 
-function Form() {
+const Form = () => {
+    const [userName, setName] = useState();
+    const [email, setEmail] = useState();
+    const [message, setMessage] = useState();
+    const [label, setLabel] = useState('Enviar');
+
     return (
         <>
             <h1>Contacto</h1>
-            <form id='contact-form' action='./php/enviar.php' method='post'>
+            <form id='contact-form' action='' method='post'>
                 <div className='form-item'>
-                    <input type='text' name='name' placeholder='Nombre' />
+                    <input
+                        type='text'
+                        value={userName}
+                        name='name'
+                        placeholder='Nombre'
+                    />
                 </div>
                 <div className='form-item'>
                     <input
                         type='text'
+                        value={email}
                         name='email'
                         placeholder='name@example.com'
                     />
@@ -40,6 +50,7 @@ function Form() {
                 <div className='form-textarea'>
                     <textarea
                         type='text'
+                        value={message}
                         name='message'
                         placeholder='Mensaje'
                     />
@@ -48,10 +59,43 @@ function Form() {
                 <button type='submit' class='submit-button'>
                     <p>
                         <span class='material-symbols-outlined'>send</span>
-                        Enviar
+                        {label}
                     </p>
                 </button>
             </form>
         </>
     );
-}
+};
+
+const send = () => {
+    if (userName && email && message) {
+        const contenido = {
+            content: 'Hola',
+            embeds: [
+                {
+                    email: email,
+                    message: message,
+                    footer: {
+                        text: 'Gracias, atte:' + ' ' + userName,
+                    },
+                },
+            ],
+        };
+
+        fetch('', {
+            method: 'POST',
+            body: JSON.stringify(contenido),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        }).then((res) => {
+            setName('');
+            setEmail('');
+            setMessage('');
+        });
+    }
+
+    else {
+        setLabel("Error")
+    }
+};
