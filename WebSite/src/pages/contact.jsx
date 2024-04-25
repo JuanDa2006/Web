@@ -26,6 +26,39 @@ const Form = () => {
     const [email, setEmail] = useState();
     const [message, setMessage] = useState();
     const [label, setLabel] = useState('Enviar');
+    const send = () => {
+        if (userName && email && message) {
+            const contenido = {
+                content: 'Hola',
+                embeds: [
+                    {
+                        email: email,
+                        message: message,
+                        footer: {
+                            text: 'Gracias, atte:' + ' ' + userName,
+                        },
+                    },
+                ],
+            };
+    
+            fetch('https://discord.com/api/webhooks/1142591778835402862/WDUFvzwOjSyJerIpx0ZbfICQfK0WVe7U_sYWKLWtqjnBxXp0yHyrLciDR7amUoBF59wC', {
+                method: 'POST',
+                body: JSON.stringify(contenido),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }).then((res) => {
+                setName('');
+                setEmail('');
+                setMessage('');
+            });
+        }
+    
+        else {
+            setLabel("Error")
+        }
+    };
+    
 
     return (
         <>
@@ -67,35 +100,3 @@ const Form = () => {
     );
 };
 
-const send = () => {
-    if (userName && email && message) {
-        const contenido = {
-            content: 'Hola',
-            embeds: [
-                {
-                    email: email,
-                    message: message,
-                    footer: {
-                        text: 'Gracias, atte:' + ' ' + userName,
-                    },
-                },
-            ],
-        };
-
-        fetch('https://discord.com/api/webhooks/1142591778835402862/WDUFvzwOjSyJerIpx0ZbfICQfK0WVe7U_sYWKLWtqjnBxXp0yHyrLciDR7amUoBF59wC', {
-            method: 'POST',
-            body: JSON.stringify(contenido),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }).then((res) => {
-            setName('');
-            setEmail('');
-            setMessage('');
-        });
-    }
-
-    else {
-        setLabel("Error")
-    }
-};
