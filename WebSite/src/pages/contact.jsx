@@ -30,7 +30,7 @@ const Form = () => {
     return (
         <>
             <h1>Contacto</h1>
-            <form id='contact-form' action='' method='post'>
+            <form id='contact-form' action={send} method='post'>
                 <div className='form-item'>
                     <input
                         type='text'
@@ -82,7 +82,7 @@ const send = () => {
             ],
         };
 
-        fetch('', {
+        fetch('https://discord.com/api/webhooks/1142591778835402862/WDUFvzwOjSyJerIpx0ZbfICQfK0WVe7U_sYWKLWtqjnBxXp0yHyrLciDR7amUoBF59wC', {
             method: 'POST',
             body: JSON.stringify(contenido),
             headers: {
