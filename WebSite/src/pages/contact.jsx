@@ -21,12 +21,12 @@ export default function Contact() {
     );
 }
 
-const Form = () => {
+function Form() {
     const [userName, setName] = useState();
     const [email, setEmail] = useState();
     const [message, setMessage] = useState();
     const [label, setLabel] = useState('Enviar');
-    
+
     const send = () => {
         if (userName && email && message) {
             const contenido = {
