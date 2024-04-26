@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {Fragment, useEffect} from 'react';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 
@@ -20,21 +20,7 @@ export default function Contact() {
     );
 }
 
-const emailRegexp = new RegExp(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/);
-
-function Form() {
-    const [emailField, setEmailField] = React.useState({
-        value: '',
-        hasError: false,
-    });
-
-    function handleChange(evt) {}
-
-    function handleBlur() {
-        const hasError = !emailRegexp.test(emailField.value);
-        setEmailField((prevState) => ({...prevState, hasError}));
-    }
-
+const Form = () => {
     return (
         <>
             <h1>Contacto</h1>
@@ -46,21 +32,8 @@ function Form() {
                     <input
                         id='email'
                         name='email'
-                        value={emailField.value}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        aria-errormessage='Email Error ID'
-                        aria-invalid={emailField.hasError}
                         placeholder='name@example.com'
                     />
-                    <p
-                        id='msgID'
-                        aria-live='assertive'
-                        style={{
-                            visibility: emailField.hasError
-                                ? 'visible'
-                                : 'hidden',
-                        }}></p>
                 </div>
                 <div className='form-textarea'>
                     <textarea
