@@ -22,45 +22,6 @@ export default function Contact() {
 }
 
 function Form() {
-    const [userName, setName] = useState();
-    const [email, setEmail] = useState();
-    const [message, setMessage] = useState();
-    const [label, setLabel] = useState('Enviar');
-
-    const send = () => {
-        if (userName && email && message) {
-            const contenido = {
-                content: 'Hola',
-                embeds: [
-                    {
-                        email: email,
-                        message: message,
-                        footer: {
-                            text: 'Gracias, atte:' + ' ' + userName,
-                        },
-                    },
-                ],
-            };
-    
-            fetch('https://discord.com/api/webhooks/1142591778835402862/WDUFvzwOjSyJerIpx0ZbfICQfK0WVe7U_sYWKLWtqjnBxXp0yHyrLciDR7amUoBF59wC', {
-                method: 'POST',
-                body: JSON.stringify(contenido),
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }).then((res) => {
-                setName('');
-                setEmail('');
-                setMessage('');
-            });
-        }
-    
-        else {
-            setLabel("Error")
-        }
-    };
-    
-
     return (
         <>
             <h1>Contacto</h1>
@@ -68,7 +29,6 @@ function Form() {
                 <div className='form-item'>
                     <input
                         type='text'
-                        value={userName}
                         name='name'
                         placeholder='Nombre'
                     />
@@ -76,7 +36,6 @@ function Form() {
                 <div className='form-item'>
                     <input
                         type='text'
-                        value={email}
                         name='email'
                         placeholder='name@example.com'
                     />
@@ -84,7 +43,6 @@ function Form() {
                 <div className='form-textarea'>
                     <textarea
                         type='text'
-                        value={message}
                         name='message'
                         placeholder='Mensaje'
                     />
@@ -93,7 +51,7 @@ function Form() {
                 <button type='submit' class='submit-button'>
                     <p>
                         <span class='material-symbols-outlined'>send</span>
-                        {label}
+                        Enviar
                     </p>
                 </button>
             </form>
