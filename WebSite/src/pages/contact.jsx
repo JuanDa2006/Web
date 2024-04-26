@@ -26,6 +26,7 @@ const Form = () => {
     const [email, setEmail] = useState();
     const [message, setMessage] = useState();
     const [label, setLabel] = useState('Enviar');
+    
     const send = () => {
         if (userName && email && message) {
             const contenido = {
