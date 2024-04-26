@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
-import '../js/send';
 
 export default function Contact() {
     useEffect(() => {
@@ -21,24 +20,47 @@ export default function Contact() {
     );
 }
 
+const emailRegexp = new RegExp(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/);
+
 function Form() {
+    const [emailField, setEmailField] = React.useState({
+        value: '',
+        hasError: false,
+    });
+
+    function handleChange(evt) {}
+
+    function handleBlur() {
+        const hasError = !emailRegexp.test(emailField.value);
+        setEmailField((prevState) => ({...prevState, hasError}));
+    }
+
     return (
         <>
             <h1>Contacto</h1>
-            <form id='contact-form' action={send} method='post'>
+            <form id='contact-form' action='' method='post'>
                 <div className='form-item'>
-                    <input
-                        type='text'
-                        name='name'
-                        placeholder='Nombre'
-                    />
+                    <input type='text' name='name' placeholder='Nombre' />
                 </div>
                 <div className='form-item'>
                     <input
-                        type='text'
+                        id='email'
                         name='email'
+                        value={emailField.value}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        aria-errormessage='Email Error ID'
+                        aria-invalid={emailField.hasError}
                         placeholder='name@example.com'
                     />
+                    <p
+                        id='msgID'
+                        aria-live='assertive'
+                        style={{
+                            visibility: emailField.hasError
+                                ? 'visible'
+                                : 'hidden',
+                        }}></p>
                 </div>
                 <div className='form-textarea'>
                     <textarea
@@ -57,5 +79,4 @@ function Form() {
             </form>
         </>
     );
-};
-
+}
