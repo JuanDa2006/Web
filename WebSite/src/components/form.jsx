@@ -35,7 +35,7 @@ const Form = () => {
                 setName('');
                 setEmail('');
                 setMessage('');
-                setLabel('Error');
+                setLabel('hidden');
             });
         } else {
             setLabel('Intentar de nuevo');
