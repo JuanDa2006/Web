@@ -150,7 +150,7 @@ const mainMediumList = mediumList.map((item) => (
 
 const plusList = [
     {
-        text: '10+ páginas web',
+        text: '10+ páginas',
         code: 'done',
         inOn: true,
     },
