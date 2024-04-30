@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
-import './styles/style.css';
+import './style/style.css';
 
 import Home from './routes/home';
 import ErrorPage from './routes/error-page';
