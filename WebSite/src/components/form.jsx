@@ -45,6 +45,9 @@ const Form = () => {
     return (
         <>
             <h1>Contacto</h1>
+            <div className="formulario">
+                
+            </div>
             <form id='contact-form' action='' method='post'>
                 <div className='form-item'>
                     <input
