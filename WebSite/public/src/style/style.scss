@@ -211,11 +211,12 @@ h2 {
 
 //Footer
 footer {
-    padding: 5px;
+    padding: 5px 10px;
     background: $Dark-Azure;
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: $White;
     text-align: center;
