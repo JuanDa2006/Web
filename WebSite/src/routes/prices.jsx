@@ -221,7 +221,7 @@ function Price() {
                     <h3>Básico</h3>
                     <p>Plan ideal para comenzar.</p>
                     {mainBasicList}
-                    <p className="plan-price">80€</p>
+                    <p className="plan-price">120€</p>
                     <div className="plan-buttons-container">
                         <button className="plan-buy">
                             <a href="/">Contatar</a>
@@ -235,7 +235,7 @@ function Price() {
                     <h3>Intermedio</h3>
                     <p>Plan para empresas en crecimiento.</p>
                     {mainMediumList}
-                    <p className="plan-price">150€</p>
+                    <p className="plan-price">300€</p>
                     <div className="plan-buttons-container">
                         <button className="plan-buy">
                             <a href="/">Contatar</a>
@@ -249,13 +249,10 @@ function Price() {
                     <h3>Avanzado</h3>
                     <p>Plan completo para grandes proyectos.</p>
                     {mainPlusList}
-                    <p className="plan-price">200€</p>
+                    <p className="plan-price"></p>
                     <div className="plan-buttons-container">
                         <button className="plan-buy">
                             <a href="/">Contatar</a>
-                        </button>
-                        <button className="plan-info">
-                            <a href="/info">Mas información</a>
                         </button>
                     </div>
                 </div>

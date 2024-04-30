@@ -8,7 +8,6 @@ import Home from './routes/home';
 import ErrorPage from './routes/error-page';
 import About from './routes/about';
 import Prices from './routes/prices';
-import Contact from './routes/contact';
 import Info from './routes/more-info';
 
 const router = createBrowserRouter([
