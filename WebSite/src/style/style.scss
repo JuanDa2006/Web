@@ -66,6 +66,14 @@ a {
     color: $Black;
 }
 
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 //Error
 #error-page {
     height: 100vh;
