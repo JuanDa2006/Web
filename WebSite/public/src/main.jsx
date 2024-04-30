@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import "./style/style.css"
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
-import ErrorPage from './pages/error-page';
-import Home from './pages/home';
-import About from './pages/about';
-import Prices from './pages/prices';
-import Contact from './pages/contact';
-import Info from './pages/more-info';
+import './styles/style.css';
+
+import Home from './routes/home';
+import ErrorPage from './routes/error-page';
+import About from './routes/about';
+import Prices from './routes/prices';
+import Contact from './routes/contact';
+import Info from './routes/more-info';
 
 const router = createBrowserRouter([
     {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
         element: <Prices />,
     },
     {
-        path: '/info',
+        path: '/information',
         element: <Info />,
     },
 ]);

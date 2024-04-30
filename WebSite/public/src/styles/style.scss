@@ -1,0 +1,408 @@
+@import 'fonts';
+@import 'colors';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $Dark-Azure;
+    }
+}
+
+body {
+    font-family: $Montserrat;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 25px auto;
+
+    p {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 35px;
+        color: $Azure;
+        margin: 5px 0;
+    }
+
+    ol,
+    ul {
+        margin: 15px 25px;
+
+        li {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    cursor: default;
+}
+
+a {
+    color: $Black;
+}
+
+//Error
+#error-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        color: $Azure;
+        font-weight: 900;
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+
+    .back {
+        margin-top: 40px;
+        line-height: 7px;
+
+        a {
+            padding: 10px;
+            border-radius: 10px;
+            letter-spacing: 2px;
+            font-size: 20px;
+            background: $Azure  ;
+            color: $White;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-style: oblique;
+        }
+    }
+}
+
+//Nav
+nav {
+    top: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background: $Dark-Azure;
+
+    ul#nav {
+        margin-left: 20px;
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            padding-right: 10px;
+
+            a {
+                color: $White;
+                font-size: 16px;
+                padding: 7px 5px;
+                border-radius: 3px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+
+    a {
+        color: $White;
+    }
+}
+
+//Header
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header-text {
+    width: 50%;
+    text-align: center;
+    margin: 50px 0;
+
+    h1 {
+        color: $Azure;
+        font-weight: 900;
+        font-size: 60px;
+        text-transform: uppercase;
+        cursor: default;
+    }
+
+    p {
+        font-size: 17px;
+        letter-spacing: 7px;
+    }
+}
+
+.header-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+//Main
+main {
+    margin: auto;
+}
+
+.itemList {
+    display: flex;
+    align-items: start;
+    margin: 15px 0;
+    text-align: left;
+
+    span {
+        color: $Azure;
+        margin-right: 5px;
+    }
+}
+
+.main-section-1 {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 25px;
+    color: $Azure;
+    margin: 5px 0;
+}
+
+//Footer
+footer {
+    padding: 5px;
+    background: $Dark-Azure;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $White;
+    text-align: center;
+}
+
+//Prices
+#prices {
+    width: 100vw;
+    display: flex;
+    overflow: auto;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#prices-continer {
+    h1 {
+        color: $Azure;
+        font-weight: 900;
+        font-size: 60px;
+        text-transform: uppercase;
+        cursor: default;
+    }
+}
+
+#plan-contenedores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin: 25px 0;
+}
+
+.plan {
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px 0;
+    box-shadow: 5px 5px 10px #0005;
+}
+
+h3 {
+    font-size: 30px;
+    color: $Azure;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.plan-price {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.plan-buttons-container {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button.plan-buy {
+    margin: 10px;
+    padding: 10px;
+    background: $Azure;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    a {
+        color: $White;
+    }
+}
+
+button.plan-info {
+    margin: 10px;
+    padding: 10px;
+    background: $White;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    a {
+        color: $Azure;
+    }
+}
+
+//Contact
+#contact {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#contact-form {
+    h1 {
+        color: $Azure;
+        font-weight: 900;
+        text-transform: uppercase;
+        cursor: default;
+    }
+
+    input {
+        font-family: $Montserrat;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid $Transparent;
+        border-bottom: 1px solid $Azure;
+        transition: ease-in 0.1s;
+
+        &:focus {
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid $Azure;
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    textarea {
+        border: 1px solid $Azure;
+        resize: none;
+        font-family: $Montserrat;
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $Azure;
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    button.submit-button {
+        border: none;
+        background: $Azure;
+        padding: 5px;
+        transition: ease-in-out 0.5s;
+        cursor: pointer;
+
+        p {
+            font-family: $Montserrat;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            color: $White;
+
+            span {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        &:hover {
+            background: $Dark-Azure;
+        }
+    }
+}
+
+//Info
+
+#info {
+    h1 {
+        color: $Azure;
+        font-weight: 900;
+        font-size: 60px;
+        text-transform: uppercase;
+        cursor: default;
+    }
+}
+
+@import 'responsive';

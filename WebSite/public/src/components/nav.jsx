@@ -2,7 +2,7 @@ const mainLinks = [
     { name: '¿Quienes somos?', url: '/about' },
     { name: 'Precios', url: '/prices' },
     // { name: 'Plantillas', url: '/templates' },
-    { name: 'Más información', url: '/info' },
+    { name: 'Más información', url: '/information' },
     // { name: 'Contactanos', url: '/contact' },
 ];
 
