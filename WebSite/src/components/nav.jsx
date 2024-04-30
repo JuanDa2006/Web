@@ -1,9 +1,9 @@
 const mainLinks = [
     { name: '¿Quienes somos?', url: '/about' },
     { name: 'Precios', url: '/prices' },
-    { name: 'Plantillas', url: '/templates' },
+    // { name: 'Plantillas', url: '/templates' },
     { name: 'Más información', url: '/info' },
-    { name: 'Contactanos', url: '/contact' },
+    // { name: 'Contactanos', url: '/contact' },
 ];
 
 const navMainLinks = mainLinks.map((mainLink) => (
