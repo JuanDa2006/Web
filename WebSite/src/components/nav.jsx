@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const mainLinks = [
     { name: '¿Quienes somos?', url: '/about' },
     { name: 'Precios', url: '/prices' },
@@ -6,9 +8,10 @@ const mainLinks = [
     { name: 'Contactanos', url: '/contact' },
 ];
 
+
 const navMainLinks = mainLinks.map((mainLink) => (
     <li>
-        <a href={mainLink.url}>{mainLink.name}</a>
+        <Link to={mainLink.url}>{mainLink.name}</Link>
     </li>
 ));
 

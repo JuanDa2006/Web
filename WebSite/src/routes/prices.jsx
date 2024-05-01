@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 
+import { Link } from 'react-router-dom';
+
 export default function Prices() {
     useEffect(() => {
         document.title = 'WebSite - Precios';
@@ -9,9 +11,9 @@ export default function Prices() {
 
     return (
         <>
-            <section id="prices">
+            <section id='prices'>
                 <Nav />
-                <main id="prices-continer">
+                <main id='prices-continer'>
                     <Price />
                 </main>
                 <Footer />
@@ -74,19 +76,22 @@ const basicList = [
 ];
 
 const mainBasicList = basicList.map((item) => (
-    <p className="itemList">
-        <span
-            className="material-symbols-outlined"
-            style={{ color: item.inOn ? '#007bff' : '#db0404' }}>
-            {item.code}
-        </span>
-        {item.text}
-    </p>
+    <div className='detailsList'>
+        <p className='itemList'>
+            <span
+                className='material-symbols-outlined'
+                style={{ color: item.inOn ? '#007bff' : '#db0404' }}
+            >
+                {item.code}
+            </span>
+            {item.text}
+        </p>
+    </div>
 ));
 
 const mediumList = [
     {
-        text: 'Hasta 5 páginas',
+        text: 'Hasta 3 páginas',
         code: 'done',
         inOn: true,
     },
@@ -138,17 +143,25 @@ const mediumList = [
 ];
 
 const mainMediumList = mediumList.map((item) => (
-    <p className="itemList">
-        <span
-            className="material-symbols-outlined"
-            style={{ color: item.inOn ? '#007bff' : '#db0404' }}>
-            {item.code}
-        </span>
-        {item.text}
-    </p>
+    <div className='detailsList'>
+        <p className='itemList'>
+            <span
+                className='material-symbols-outlined'
+                style={{ color: item.inOn ? '#007bff' : '#db0404' }}
+            >
+                {item.code}
+            </span>
+            {item.text}
+        </p>
+    </div>
 ));
 
 const plusList = [
+    {
+        text: 'Ecommerce',
+        code: 'done',
+        inOn: true,
+    },
     {
         text: '10+ páginas web',
         code: 'done',
@@ -202,57 +215,61 @@ const plusList = [
 ];
 
 const mainPlusList = plusList.map((item) => (
-    <p className="itemList">
-        <span
-            className="material-symbols-outlined"
-            style={{ color: item.inOn ? '#007bff' : '#db0404' }}>
-            {item.code}
-        </span>
-        {item.text}
-    </p>
+    <div className='detailsList'>
+        <p className='itemList'>
+            <span
+                className='material-symbols-outlined'
+                style={{ color: item.inOn ? '#007bff' : '#db0404' }}
+            >
+                {item.code}
+            </span>
+            {item.text}
+        </p>
+    </div>
 ));
 
 function Price() {
     return (
         <>
             <h1>Precios</h1>
-            <div id="plan-contenedores">
-                <div className="plan">
+            <div id='plan-contenedores'>
+                <div className='plan'>
                     <h3>Básico</h3>
                     <p>Plan ideal para comenzar.</p>
+                    <p className='plan-price'>120€</p>
                     {mainBasicList}
-                    <p className="plan-price">120€</p>
-                    <div className="plan-buttons-container">
-                        <button className="plan-buy">
-                            <a href="/">Contatar</a>
+                    <div className='plan-buttons-container'>
+                        <button className='plan-buy'>
+                            <Link to='/contact'>Contatar</Link>
                         </button>
-                        <button className="plan-info">
-                            <a href="/info">Mas información</a>
+                        <button className='plan-info'>
+                            <Link to='/information'>Mas información</Link>
                         </button>
                     </div>
                 </div>
-                <div className="plan">
+                <div className='plan'>
                     <h3>Intermedio</h3>
                     <p>Plan para empresas en crecimiento.</p>
+                    <p className='plan-price'>300€</p>
                     {mainMediumList}
-                    <p className="plan-price">300€</p>
-                    <div className="plan-buttons-container">
-                        <button className="plan-buy">
-                            <a href="/">Contatar</a>
+                    <div className='plan-buttons-container'>
+                        <button className='plan-buy'>
+                            <Link to='/contact'>Contatar</Link>
                         </button>
-                        <button className="plan-info">
-                            <a href="/info">Mas información</a>
+                        <button className='plan-info'>
+                            <Link to='/information'>Mas información</Link>
                         </button>
                     </div>
                 </div>
-                <div className="plan">
+                <div className='plan'>
                     <h3>Avanzado</h3>
-                    <p>Plan completo para grandes proyectos.</p>
+                    <p>Perfecto para grandes proyectos</p>
+                    <p className='plan-price'></p>
                     {mainPlusList}
-                    <p className="plan-price"></p>
-                    <div className="plan-buttons-container">
-                        <button className="plan-buy">
-                            <a href="/">Contatar</a>
+                    <p className='plan-price'></p>
+                    <div className='plan-buttons-container'>
+                        <button className='plan-buy'>
+                            <Link to='/contact'>Contatar</Link>
                         </button>
                     </div>
                 </div>
