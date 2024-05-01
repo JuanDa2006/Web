@@ -2,30 +2,11 @@ import { useRef } from 'react';
 import emailjs, { send } from '@emailjs/browser';
 
 const Form = () => {
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-            .sendForm('service_g35rpma', 'template_jpmgwsm', form.current, {
-                publicKey: '23VVPNHkPWtgXl65Q',
-            })
-            .then(
-                () => {
-                    console.log('SUCCESS!');
-                },
-                (error) => {
-                    console.log('FAILED...', error.text);
-                }
-            );
-    };
-
     return (
         <>
             <h1>Contacto</h1>
             <div>
-                <form ref={form} onSubmit={sendEmail}>
+                <form>
                     <div className='form-item'>
                         <input
                             type='text'
