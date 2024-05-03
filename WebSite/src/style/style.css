@@ -188,6 +188,16 @@ header {
 		        align-items: center;
 }
 .header-img img {
+		-webkit-animation-name: header-img-animate;
+		        animation-name: header-img-animate;
+		-webkit-animation-duration: 1.5s;
+		        animation-duration: 1.5s;
+		-webkit-animation-timing-function: ease-in-out;
+		        animation-timing-function: ease-in-out;
+		-webkit-animation-iteration-count: infinite;
+		        animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		        animation-direction: alternate;
 		width: 75%;
 		height: auto;
 }
@@ -502,6 +512,51 @@ button.plan-info a {
 		cursor: default;
 }
 
+@-webkit-keyframes header-img-animate {
+		0% {
+				-webkit-transform: translateY(0);
+				        transform: translateY(0);
+		}
+		25% {
+				-webkit-transform: translateY(5);
+				        transform: translateY(5);
+		}
+		50% {
+				-webkit-transform: translateY(0);
+				        transform: translateY(0);
+		}
+		75% {
+				-webkit-transform: translateY(-5);
+				        transform: translateY(-5);
+		}
+		100% {
+				-webkit-transform: translateY(0);
+				        transform: translateY(0);
+		}
+}
+
+@keyframes header-img-animate {
+		0% {
+				-webkit-transform: translateY(0);
+				        transform: translateY(0);
+		}
+		25% {
+				-webkit-transform: translateY(5);
+				        transform: translateY(5);
+		}
+		50% {
+				-webkit-transform: translateY(0);
+				        transform: translateY(0);
+		}
+		75% {
+				-webkit-transform: translateY(-5);
+				        transform: translateY(-5);
+		}
+		100% {
+				-webkit-transform: translateY(0);
+				        transform: translateY(0);
+		}
+}
 @media (max-width: 479px) {
 		nav {
 				padding: 0 20px;

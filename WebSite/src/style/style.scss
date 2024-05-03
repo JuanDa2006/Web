@@ -180,8 +180,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     img {
+        animation-name: header-img-animate;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
         width: 75%;
         height: auto;
     }
@@ -422,6 +427,25 @@ button.plan-info {
         font-size: 60px;
         text-transform: uppercase;
         cursor: default;
+    }
+}
+
+//Animations
+@keyframes header-img-animate {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(5);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
