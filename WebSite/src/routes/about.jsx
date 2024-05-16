@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 
@@ -11,18 +11,8 @@ export default function About() {
         <>
             <Nav />
             <main>
-                <div className="container">
+                <div className='container'>
                     <h2>Historia de la Empresa</h2>
-                    <p>
-                        La historia de nuestra empresa comenzó en el año 2017,
-                        cuando un grupo de emprendedores decidimos unir nuestras
-                        habilidades y pasiones para brindar soluciones digitales
-                        de calidad a autónomos y empresarios. Nuestra visión era
-                        clara desde el principio: crear páginas web que no solo
-                        fueran estéticamente atractivas, sino también
-                        funcionales y efectivas para impulsar el crecimiento de
-                        nuestros clientes.
-                    </p>
 
                     <p>
                         Con un fuerte compromiso hacia la excelencia y el
@@ -85,7 +75,7 @@ export default function About() {
                         nosotros.
                     </p>
                 </div>
-                <div className="container">
+                <div className='container'>
                     <h2>Misión y Visión</h2>
                     <p>
                         En Genios Web, nuestra misión es proporcionar soluciones
@@ -124,7 +114,7 @@ export default function About() {
                         positivo en sus resultados.
                     </p>
                 </div>
-                <div className="container">
+                <div className='container'>
                     <h2>Valores y Filosofía</h2>
                     <p>
                         En Genios Web, nuestros valores y filosofía son la base
@@ -182,7 +172,7 @@ export default function About() {
                         </li>
                     </ol>
                 </div>
-                <div className="container">
+                <div className='container'>
                     <h2>Equipo y Experiencia</h2>
                     <p>
                         En Genios Web, contamos con un equipo apasionado y
@@ -237,7 +227,7 @@ export default function About() {
                         soluciones web innovadoras y efectivas.
                     </p>
                 </div>
-                <div className="container">
+                <div className='container'>
                     <h2>Compromiso con el Cliente</h2>
                     <p>
                         En Genios Web, nuestro compromiso con el cliente es la

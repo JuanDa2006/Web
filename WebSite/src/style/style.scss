@@ -182,6 +182,7 @@ header {
     align-items: center;
     
     img {
+        z-index: 1;
         animation-name: header-img-animate;
         animation-duration: 1.5s;
         animation-timing-function: ease-in-out;

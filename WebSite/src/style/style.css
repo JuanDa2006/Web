@@ -188,6 +188,7 @@ header {
 		        align-items: center;
 }
 .header-img img {
+		z-index: 1;
 		-webkit-animation-name: header-img-animate;
 		        animation-name: header-img-animate;
 		-webkit-animation-duration: 1.5s;
@@ -579,6 +580,9 @@ button.plan-info a {
 		}
 		ul {
 				width: 100%;
+		}
+		.header-img {
+				display: none;
 		}
 		#contact-form h1 {
 				font-size: 35px;

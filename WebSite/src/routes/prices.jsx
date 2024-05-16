@@ -240,7 +240,7 @@ function Price() {
                     {mainBasicList}
                     <div className='plan-buttons-container'>
                         <button className='plan-buy'>
-                            <Link to='/contact'>Contatar</Link>
+                            <Link to='/contact'>Contratar</Link>
                         </button>
                         <button className='plan-info'>
                             <Link to='/information'>Mas información</Link>
@@ -254,7 +254,7 @@ function Price() {
                     {mainMediumList}
                     <div className='plan-buttons-container'>
                         <button className='plan-buy'>
-                            <Link to='/contact'>Contatar</Link>
+                            <Link to='/contact'>Contratar</Link>
                         </button>
                         <button className='plan-info'>
                             <Link to='/information'>Mas información</Link>
@@ -269,7 +269,7 @@ function Price() {
                     <p className='plan-price'></p>
                     <div className='plan-buttons-container'>
                         <button className='plan-buy'>
-                            <Link to='/contact'>Contatar</Link>
+                            <Link to='/contact'>Contratar</Link>
                         </button>
                     </div>
                 </div>

@@ -1,8 +1,8 @@
 import emailjs from '@emailjs/browser';
 
-const SERVICE_ID = 'service_g35rpma';
-const TEMPLATE_ID = 'template_jje55am';
-const PUBLIC_KEY = '23VVPNHkPWtgXl65Q';
+const SERVICE_ID = 'service_hgiwz5h';
+const TEMPLATE_ID = 'template_7xpfp7p';
+const PUBLIC_KEY = 'CJDP5SZ36eNLkj2sr';
 
 const Form = () => {
     const handleOnSubmit = (e) => {
