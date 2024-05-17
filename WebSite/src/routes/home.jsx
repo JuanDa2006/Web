@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import Nav from '../components/nav';
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -59,6 +61,10 @@ const mainSecondList = secondList.map((item) => (
 ));
 
 export default function Home() {
+    useEffect(() => {
+        document.title = 'GeniosWeb - Inicio';
+    }, []);
+    
     return (
         <>
             <Nav />

@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 
 export default function About() {
     useEffect(() => {
-        document.title = 'WebSite - ¿Quienes Somos?';
+        document.title = 'GeniosWeb - ¿Quienes Somos?';
     }, []);
 
     return (

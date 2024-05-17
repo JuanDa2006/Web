@@ -5,7 +5,7 @@ import Form from '../components/form';
 
 export default function Contact() {
     useEffect(() => {
-        document.title = 'WebSite - Contacto';
+        document.title = 'GeniosWeb - Contacto';
     }, []);
 
     return (

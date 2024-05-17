@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 
 export default function Info() {
     useEffect(() => {
-        document.title = 'WebSite - Información';
+        document.title = 'GeniosWeb - Información';
     }, []);
 
     return (
