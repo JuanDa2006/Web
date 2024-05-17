@@ -6,6 +6,14 @@
 		        box-sizing: border-box;
 		text-decoration: none;
 }
+*::-moz-selection {
+		color: #004085;
+		background: #d4e9ff;
+}
+*::selection {
+		color: #004085;
+		background: #d4e9ff;
+}
 
 html {
 		scroll-behavior: smooth;
